@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp">
+
+    <!--<fragment android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="ua.student.program.ProgressFragment" />-->
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Логин"/>
+    <EditText
+        android:id="@+id/parol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_below="@+id/login"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="177dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="100dp"
+        android:text="Войти"
+        android:layout_marginTop="26dp"
+        android:onClick="log_in"
+        android:layout_below="@+id/parol"
+        android:layout_centerHorizontal="true"></Button>
+    <Button
+        android:id="@+id/info"
+        android:layout_width="200dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="100dp"
+        android:text="Информация о создателе"
+        android:onClick="info"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"></Button>
+
+</RelativeLayout>
